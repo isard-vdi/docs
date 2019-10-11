@@ -48,7 +48,7 @@ docker exec -e PASSWORD=<YOUR_ROOT_PASSWORD> externalhyper_isard-hypervisor_1 ba
 After that you can continue to add ssh keys for this hyper in your IsardVDI isard-app container and create new hypervisor in UI:
 
 ```bash
-docker exec -e HYPERVISOR=<IP|DNS> -e PASSWORD=<YOUR_ROOT_PASSWD> -e PORT=2022 isard_isard-app_1 bash -c '/add-hypervisor.sh'; history -d $((HISTCMD-1))
+docker exec -e HYPERVISOR=<IP|DNS> -e PASSWORD=<YOUR_ROOT_PASSWD> -e PORT=2022 isard_isard-app_1 sh -c '/add-hypervisor.sh'; history -d $((HISTCMD-1))
 ```
 
 ### Manual Install
